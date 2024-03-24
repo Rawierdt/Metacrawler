@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Raillinc;
+  src: url("/src/Raillinc.otf") format("opentype");
+}
+
+.stagger-visualizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+}
+
+.stagger-visualizer div {
+  width: 64px;
+  height: 128px;
+  border: 1px solid rgb(185, 0, 0);
+  background-color: #000;
+}
+
+.title {
+  font-family: Raillinc, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  justify-items: center;
+  margin-bottom: 0.1rem;
+  color: #ff0000;
+  position: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+}
+
+.subtitle {
+  text-align: center;
+  justify-items: center;
+  color: #ffdfdf;
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.1rem
+}
+
+
+#dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+#dropzone:hover {
+  background-color: rgba(201, 194, 194, 0.288);
+}
+
+#fileInput {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .button-container button {
+    margin: 5px;
+  }
+
+  html, body {
+    font-family: 'Raillinc';
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    background-color: #121212;
+  }
+  .wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  .background-svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .btn {
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+    color: white;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.3);
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: 3px solid rgb(219, 219, 219);
+  }
+  
+  .btn:hover {
+    filter: brightness(110%);
+  }
+  
+  .btn:active {
+    transform: translateY(2px);
+    transition: transform 34ms;
+  }
+
+  .btn2 {
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+    color: white;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.3);
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: 3px solid rgb(219, 219, 219);
+}
+
+.btn2:hover {
+    filter: brightness(110%);
+}
+
+.btn2:active {
+    transform: translateY(2px);
+    transition: transform 34ms;
+}
+
+.btn2[disabled] {
+    background: gray;
+    color: black;
+    cursor: not-allowed;
+    box-shadow: none;
+    border: 3px solid rgb(219, 219, 219);
+}
